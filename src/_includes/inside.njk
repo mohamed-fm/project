@@ -1,0 +1,45 @@
+---
+layout: 'base.njk'
+---
+
+
+<div class="project">
+    <div class="cat catnap">
+        <ul class="ull">
+            <li class="active" data-cat=".all">All posts</li>
+            <li data-cat=".Biomedical Engineering">Biomedical Engineering</li>
+            <li data-cat=".Astronomy">Astronomy</li>
+            <li data-cat=".Physics">Physics</li>
+            <li data-cat=".Chemistry">Chemistry</li>
+            <li data-cat=".Computer Science">Computer Science</li>
+        </ul>
+    </div>
+
+
+    <section class="inside">
+        <div class="all-page">
+            <div class="ins-head">
+                <div>
+                    <img src="\assets\Screenshot (126).png" alt="">
+                    <p>STEMinnovista</p>
+                </div>
+                <p>{{ date | postDate }}</p>
+            </div>
+            <div class="body">
+                <h1>{{ title }}</h1>
+                <p>
+                    {{ content | safe }}
+                </p>
+            </div>
+            <div class="end">
+                <div>
+                    <a href=""><img src="\assets\facebook.svg" alt=""></a>
+                    <a href=""><img src="\assets\twitter.svg" alt=""></a>
+                    <a href=""><img src="\assets\link.svg" alt=""></a>
+                </div>
+                <p>Astronomy</p>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="/main.js"></script>
