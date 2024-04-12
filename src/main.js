@@ -14,8 +14,8 @@ switcher.forEach((li)=>{
 
 function  removeactive() {
     switcher.forEach((li) =>{
-        li.classList.remove("active");
-        this.classList.add("active");
+        li.idList.remove("active");
+        this.idList.add("active");
         
     });
 }
