@@ -4,39 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>HOme</title>
+    <title>Home</title>
 </head>
 <body>
-            <section class="nav">
+            
+        
+        <section class="nav">
                 <nav>
                     <div>
-                        <img src="\assets\Screenshot (126).png" alt="">
+                        <img src="/assets/Screenshot (126).png" alt="">
                         <h1>STEMinnovista</h1>
                     </div>
                     <ul>
-                        <li ><a href="/index" id="home" >Home</a></li>
-                        <li><a href="/Our-mission">Our Mission</a></li>
-                        <li><a href="/artical">Articles</a></li>
-                        <li><a href="/join-us">join Our Team</a></li>
+                        <img src="/assets/icons8-hamburger-menu-48.png"  alt="" class="icon-burger">
+                        <li ><a href="/index" class="home">Home</a></li>
+                        <li><a href="/Our-mission" class="our">Our Mission</a></li>
+                        <li><a href="/artical" class="art">Articles</a></li>
+                        <li><a href="/join-us" class="join">join Our Team</a></li>
                     </ul>
                 </nav>           
         </section>
-    
+     
 
 
     <div class="project">
 
-        <section class="header">
+        <section class="header"> 
             <div class="head">
-                <img src="assets\Screenshot (126).png" alt="">
-                <div>
+
+                <div class="what">
+                    <ul class="lu">
+                        <img src="assets/icons8-squiggly-arrow-64.png" alt="" class="arrow">
+                        <li class="aa">Science</li>
+                        <li class="b">Technology</li>
+                        <li class="c">Engineering</li>
+                        <li class="d">Mathematics</li>
+                    </ul>
+                    <img src="assets\Screenshot (126).png" alt="" class="not-arrow">
+                    <img src="assets/icons8-arrow-up-24.png" alt="" class="arrow-2">
+                    <img src="assets/icons8-arrow-up-24.png" alt="" class="arrow-3">
+
+                    <div>
                         <h1>Empowering <br> <span class="women">women</span> in <span class="stem">STEM</span>.</h1>
                         <a href="#">Explore our articles! ⇒</a>
                     
+                    </div>
                 </div>
             </div>
         </section>
@@ -53,7 +68,7 @@
                         transform the curious youth of today into the scientists of
                         tomorrow.
                         </p>
-                    <a href="">Learn More</a></div>
+                    <a href="/Our-mission">Learn More</a></div>
                 </div>
             </div>
         </section>
@@ -62,10 +77,12 @@
                 <div class="footer-small">
                     <h1>Join Us!</h1>
                     <p>Want to join our cause? Apply to join our team!</p>
-                    <a href="">Application</a>
+                    <a href="https://forms.gle/9C1pysdTRLdofiZj7" target="_blank">Application</a>
                 </div>
             </div>
         </section>
+        
+
     </div>
 
     
@@ -89,5 +106,6 @@
             });
         }
         </script>
+    <script src="/main.js"></script>
 </body>
 </html>
