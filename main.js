@@ -2,7 +2,7 @@
 
 const activePage = window.location.pathname;
 console.group(activePage);
-if(activePage === "/"){
+if(activePage === "/home/"){
     document.querySelector(".home").classList.add("activee");
 }
 if(activePage === "/our-mission/"){
@@ -43,7 +43,7 @@ function imgmanage() {
     });
     console.log(document.querySelectorAll(this.dataset.cat));
     document.querySelectorAll(this.dataset.cat).forEach((el) => {
-        el.style.display="inherit";
+        el.style.display="flex";
     });
 }
 
