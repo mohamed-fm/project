@@ -523,7 +523,7 @@ ul li .activee{
     width: 115%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px ,1fr));
-    gap: .5rem;
+    gap: 80px;
     margin-top: 40px;
     margin-bottom: 60px;
 }
