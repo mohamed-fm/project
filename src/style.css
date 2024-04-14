@@ -375,6 +375,7 @@ ul li .activee{
 }
 .our-mission-small .talk h1{ 
     font-size: 37px;
+    margin-inline: 20px;
     color: var(--pink);
 }
 
