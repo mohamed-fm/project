@@ -1,33 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <title>Home</title>
-</head>
-<body>
-            
-        
-        <section class="nav">
-                <nav>
-                    <div>
-                        <img src="/assets/Screenshot (126).png" alt="">
-                        <h1>STEMinnovista</h1>
-                    </div>
-                    <ul>
-                        <img src="/assets/icons8-hamburger-menu-48.png"  alt="" class="icon-burger">
-                        <li ><a href="/home" class="home">Home</a></li>
-                        <li><a href="/our-mission" class="our">Our Mission</a></li>
-                        <li><a href="/artical" class="art">Articles</a></li>
-                        <li><a href="/join-us" class="join">join Our Team</a></li>
-                    </ul>
-                </nav>           
-        </section>
-     
+---
+layout: 'base.njk'
+title: Home
+--- 
 
 
     <div class="project">
@@ -68,7 +42,7 @@
                         transform the curious youth of today into the scientists of
                         tomorrow.
                         </p>
-                    <a href="/Our-mission">Learn More</a></div>
+                    <a href="/our-mission">Learn More</a></div>
                 </div>
             </div>
         </section>
@@ -84,28 +58,3 @@
         
 
     </div>
-
-    
-
-
-
-        <section class="copyright">
-            <div>
-                <p>©This site is designed by Mohamed Faisal</p>
-                <p>Mali:<a href="mailto: m.fmragheb@email.com" type="Mali" target="_blank"> m. fmragheb@gmailcom</a></p>
-            </div>
-        </section>
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
-        </script>
-    <script src="/main.js"></script>
-</body>
-</html>

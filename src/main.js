@@ -2,10 +2,10 @@
 
 const activePage = window.location.pathname;
 console.group(activePage);
-if(activePage === "/index"){
+if(activePage === "/home/"){
     document.querySelector(".home").classList.add("activee");
 }
-if(activePage === "/Our-mission/"){
+if(activePage === "/our-mission/"){
     document.querySelector(".our").classList.add("activee");
 }
 if(activePage === "/artical/"){
