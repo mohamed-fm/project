@@ -300,6 +300,10 @@ ul li .activee{
     font-size:14px;
     margin-bottom: 10px;
 }
+.fe-small .contant{
+    padding-inline: 50px;
+
+}
 
 .fe-small .posts .post{
     border: none;
@@ -632,7 +636,6 @@ ul li .activee{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    padding-inline: 50px;
     border-bottom: 1px solid var(--gray);
 }
 .posts .post img{
