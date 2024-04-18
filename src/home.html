@@ -3,7 +3,11 @@ layout: 'base.njk'
 title: Home
 --- 
 
-
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="swiper.css">
     <div class="project">
 
         <section class="header"> 
@@ -23,7 +27,7 @@ title: Home
 
                     <div>
                         <h1>Empowering <br> <span class="women">women</span> in <span class="stem">STEM</span>.</h1>
-                        <a href="#">Explore our articles! ⇒</a>
+                        <a href="/artical">Explore our articles! ⇒</a>
                     
                     </div>
                 </div>
@@ -46,6 +50,38 @@ title: Home
                 </div>
             </div>
         </section>
+        <section class="fe-article">
+                <div class="fe-small">
+                    <div class="header-h1">
+                        <h1>Featured Articles</h1>
+                    </div>
+                
+                        <div class="holder-art ">
+                        <div class="swiper">
+                            <div class="posts swiper-wrapper">
+                        {%- for post in collections.featured | reverse -%}
+                            <div class="post all swiper-slide {{ post.data.CAT }}" >
+                                <div class="img-holder">
+                                <img src="{{ post.data.image }}" alt="{{ post.data.Altimage }}"></div>
+                                <div class="card">
+                                    <div class="contant">
+                                        <p>{{ post.data.date | postDate }}</p>
+                                        <h1>{{ post.data.title }}</h1>
+                                        <p class="last-p">{{ post.data.description }}</p>
+                                        <a href="{{ post.url }}">Continue reading! ⇒</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {%- endfor %}
+                            </div>
+                            <div class="swiper-button-next hi"></div>
+                            <div class="swiper-button-prev hi"></div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        </div>
+                        
+                </div>
+                </section>
         <section class="footer">
             <div class="footer-section">
                 <div class="footer-small">
@@ -56,5 +92,13 @@ title: Home
             </div>
         </section>
         
-
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+
+
