@@ -717,7 +717,7 @@ ul li .activee{
         margin-bottom: 50px;
         padding-bottom: 40px;
     }
-     .page .post .card{
+        .page .post .card{
         flex-direction: column;
     }
 }
@@ -733,7 +733,7 @@ ul li .activee{
         width: 70vw;
         text-align: center;
     }
-     .page .posts .post .card .contant{
+        .page .posts .post .card .contant{
         align-items: center;
     }
 }

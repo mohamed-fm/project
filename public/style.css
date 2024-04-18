@@ -300,6 +300,10 @@ ul li .activee{
     font-size:14px;
     margin-bottom: 10px;
 }
+.fe-small .contant{
+    padding-inline: 50px;
+
+}
 
 .fe-small .posts .post{
     border: none;
@@ -632,7 +636,6 @@ ul li .activee{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    padding-inline: 50px;
     border-bottom: 1px solid var(--gray);
 }
 .posts .post img{
@@ -714,7 +717,7 @@ ul li .activee{
         margin-bottom: 50px;
         padding-bottom: 40px;
     }
-     .page .post .card{
+        .page .post .card{
         flex-direction: column;
     }
 }
@@ -730,7 +733,7 @@ ul li .activee{
         width: 70vw;
         text-align: center;
     }
-     .page .posts .post .card .contant{
+        .page .posts .post .card .contant{
         align-items: center;
     }
 }
