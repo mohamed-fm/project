@@ -1,0 +1,36 @@
+---
+layout: 'base.njk'
+title: Articles
+---
+<div class="project">
+    <section class="articals">
+        <div class="page">
+            <div class="cat">
+                <h1>Our Articles</h1>
+                <ul class="ull">
+                    <li class="active" data-cat=".all">All posts</li>
+                    <li data-cat=".BiomedicalEngineering">Biomedical Engineering</li>
+                    <li data-cat=".Astronomy">Astronomy</li>
+                    <li data-cat=".Physics">Physics</li>
+                    <li data-cat=".Chemistry">Chemistry</li>
+                    <li data-cat=".ComputerScience">Computer Science</li>
+                </ul>
+            </div>
+            <div class="posts">
+            {%- for post in collections.post | reverse -%}
+                <div class="post all {{ post.data.CAT }}" >
+                    <img src="{{ post.data.image }}" alt="{{ post.data.Altimage }}">
+                    <div class="card">
+                        <div class="contant">
+                            <p>{{ post.data.date | postDate }}</p>
+                            <h1>{{ post.data.title }}</h1>
+                            <p class="last-p">{{ post.data.description }}</p>
+                            <a href="{{ post.url }}">Continue reading! ⇒</a>
+                        </div>
+                    </div>
+                </div>
+            {%- endfor %}
+            </div>
+        </div>
+    </section>
+</div>
