@@ -284,6 +284,7 @@ ul li .activee{
 }
 .fe-small .posts .post img{
     width: 95px;
+    height:95px;
     border-radius: 50%;
 }
 .fe-small .posts .post .card .contant{
